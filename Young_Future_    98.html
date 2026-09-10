@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Young Future</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#fafafa;
+
+color:#222;
+
+}
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 8%;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo img{
+
+height:70px;
+
+}
+
+.logo h2{
+
+font-size:32px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+}
+
+nav{
+
+display:flex;
+
+gap:35px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#222;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#1f5eff;
+
+}
+
+.hero{
+
+padding:170px 8% 100px;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+align-items:center;
+
+gap:70px;
+
+}
+
+.hero h1{
+
+font-size:65px;
+
+line-height:70px;
+
+margin:20px 0;
+
+font-weight:800;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+color:#666;
+
+}
+
+.hero button{
+
+margin-top:35px;
+
+padding:18px 45px;
+
+border:none;
+
+background:#1f5eff;
+
+color:white;
+
+border-radius:10px;
+
+cursor:pointer;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+.hero button:hover{
+
+transform:translateY(-4px);
+
+}
+
+.formulario{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.formulario h2{
+
+margin-bottom:25px;
+
+}
+
+.formulario input,.formulario select{
+
+width:100%;
+
+padding:16px;
+
+margin:12px 0;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+outline:none;
+
+}
+
+.formulario button{
+
+width:100%;
+
+padding:16px;
+
+background:#1f5eff;
+
+border:none;
+
+border-radius:10px;
+
+color:white;
+
+font-size:17px;
+
+cursor:pointer;
+
+}
+
+section{
+
+padding:100px 8%;
+
+}
+
+.titulo{
+
+text-align:center;
+
+font-size:42px;
+
+margin-bottom:60px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+color:#666;
+
+}
+
+.search{
+
+width:100%;
+
+padding:18px;
+
+border-radius:12px;
+
+border:1px solid #ddd;
+
+font-size:18px;
+
+margin-bottom:40px;
+
+}
+
+.universidad{
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+margin-bottom:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.calculadoras{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.calc{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 15px 35px rgba(0,0,0,.05);
+display:flex;
+flex-direction:column;
+}
+.calc button{
+width:100%;
+padding:15px;
+border:none;
+background:#1f5eff;
+color:white;
+border-radius:10px;
+cursor:pointer;
+margin-top:auto;
+}
+
+.calc input{
+
+width:100%;
+
+padding:15px;
+
+margin:12px 0;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+}
+
+.calc button{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+background:#1f5eff;
+
+color:white;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+footer{
+
+background:#111;
+
+padding:60px;
+
+text-align:center;
+
+color:white;
+
+margin-top:100px;
+
+}
+
+footer img{
+
+height:100px;
+
+margin-bottom:20px;
+
+}
+
+.dark{
+
+background:#111;
+
+color:white;
+
+}
+
+.dark header{
+
+background:#111;
+
+}
+
+.dark nav a{
+
+color:white;
+
+}
+
+.dark .card,
+
+.dark .calc,
+
+.dark .formulario,
+
+.dark .universidad{
+
+background:#1e1e1e;
+
+color:white;
+
+}
+
+.dark p{
+
+color:#ccc;
+
+}
+
+#chat{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+background:#1f5eff;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+font-size:30px;
+
+cursor:pointer;
+
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:45px;
+
+line-height:50px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+
+<style>
+#authOverlay{
+position:fixed; inset:0; z-index:99999;
+background:linear-gradient(135deg,#0B1F66,#1F5EFF 60%,#64A8FF);
+display:flex; align-items:center; justify-content:center;
+font-family:Poppins,sans-serif;
+}
+.auth-card{
+background:rgba(255,255,255,.97);
+width:92%; max-width:430px; border-radius:28px;
+padding:35px; text-align:center;
+box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+.auth-card .logo{
+width:90px;height:90px;border-radius:50%;
+background:#1F5EFF;color:#fff;
+display:flex;align-items:center;justify-content:center;
+font-size:38px;margin:0 auto 18px;
+}
+.auth-card h1{color:#1F5EFF;font-size:30px;margin-bottom:6px}
+.auth-card p{color:#555;margin-bottom:18px}
+.auth-card input{
+width:100%;padding:15px;margin:8px 0;
+border:1px solid #D6DDF5;border-radius:14px;font-size:15px;
+}
+.auth-card button{
+width:100%;padding:15px;border:none;border-radius:14px;
+background:#1F5EFF;color:#fff;font-size:16px;font-weight:700;
+cursor:pointer;margin-top:8px;
+}
+.auth-card .switch{margin-top:15px;font-size:14px}
+.auth-card a{color:#1F5EFF;font-weight:700;cursor:pointer;text-decoration:none}
+</style>
+
+</head>
+
+<body>
+
+<div id="authOverlay">
+  <div class="auth-card">
+    <div class="logo">🎓</div>
+    <h1>Young Future</h1>
+    <p id="authText">Inicia sesión para descubrir universidades y becas.</p>
+
+    <div id="loginView">
+      <input id="loginEmail" type="email" placeholder="Correo electrónico">
+      <input id="loginPass" type="password" placeholder="Contraseña">
+      <button onclick="loginYoung()">Iniciar sesión</button>
+      <div class="switch">¿No tienes cuenta? <a onclick="showRegister()">Crear cuenta</a></div>
+    </div>
+
+    <div id="registerView" style="display:none">
+      <input id="regName" placeholder="Nombre completo">
+      <input id="regEmail" type="email" placeholder="Correo electrónico">
+      <input id="regPass" type="password" placeholder="Contraseña">
+      <input id="regPass2" type="password" placeholder="Confirmar contraseña">
+      <button onclick="registerYoung()">Crear cuenta</button>
+      <div class="switch">¿Ya tienes cuenta? <a onclick="showLogin()">Iniciar sesión</a></div>
+    </div>
+  </div>
+</div>
+
+
+<header>
+
+<div class="logo">
+
+<img src="logo.png">
+
+<h2>Young Future</h2>
+
+</div>
+
+<nav>
+
+<a href="#inicio">Inicio</a>
+
+<a href="#universidades">Universidades</a>
+
+<a href="#finanzas">Finanzas</a>
+
+<a href="#becas">Becas</a>
+
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="inicio">
+
+<div>
+
+<h1>Únete a la nueva generación.</h1>
+
+<p>
+
+Encuentra universidades, becas, programas académicos y aprende educación financiera para construir un mejor futuro.
+
+</p>
+
+<button onclick="document.getElementById('universidades').scrollIntoView()">
+
+Explorar
+
+</button>
+
+</div>
+
+<div class="formulario">
+
+<h2>Empieza Hoy</h2>
+
+<input placeholder="Nombre">
+
+<input placeholder="Correo">
+
+<input placeholder="Teléfono">
+
+<select>
+
+<option>Selecciona un país</option>
+
+<option>Colombia</option>
+
+<option>Estados Unidos</option>
+
+<option>México</option>
+
+<option>España</option>
+
+<option>Canadá</option>
+
+</select>
+
+<button>Quiero comenzar</button>
+
+</div>
+
+</section>
+<!-- ===================== UNIVERSIDADES ===================== -->
+
+<section id="universidades">
+
+<h2 class="titulo">Busca tu Universidad Ideal</h2>
+
+<input
+type="text"
+class="search"
+id="buscarUniversidad"
+placeholder="Buscar universidad, carrera o país...">
+
+<div id="listaUniversidades" class="cards"></div>
+
+</section>
+
+<!-- ===================== BECAS ===================== -->
+
+<section id="becas">
+
+<h2 class="titulo">Becas Destacadas</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎓 Beca Excelencia</h3>
+<p>Hasta el 100% del valor de la matrícula para estudiantes destacados.</p>
+</div>
+
+<div class="card">
+<h3>🌎 Beca Internacional</h3>
+<p>Apoyo para estudiar en Estados Unidos, Canadá, España y otros países.</p>
+</div>
+
+<div class="card">
+<h3>💻 Beca Tecnología</h3>
+<p>Programas especiales para Ingeniería, IA y Desarrollo de Software.</p>
+</div>
+
+<div class="card">
+<h3>💼 Beca Emprendedores</h3>
+<p>Dirigida a jóvenes con proyectos empresariales.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================== FINANZAS ===================== -->
+
+<section id="finanzas">
+
+<h2 class="titulo">Herramientas Financieras</h2>
+
+<div class="calculadoras">
+
+<div class="calc">
+
+<h3>Calculadora de Ahorro</h3>
+
+<input id="ahorroMensual" type="number" placeholder="Ahorro mensual">
+
+<input id="meses" type="number" placeholder="Número de meses">
+<div style="height:75px;"></div>
+<button onclick="calcularAhorro()">
+
+Calcular
+
+</button>
+
+<h2 id="resultadoAhorro"></h2>
+
+</div>
+
+<div class="calc">
+
+<h3>Calculadora de Matrícula</h3>
+
+<input id="valorSemestre" type="number" placeholder="Valor del semestre">
+
+<input id="cantidadSemestres" type="number" placeholder="Cantidad de semestres">
+<div style="height:75px;"></div>
+<button onclick="calcularCarrera()">
+
+Calcular
+
+</button>
+
+<h2 id="resultadoCarrera"></h2>
+
+</div>
+
+<div class="calc">
+
+<h3>Simulador de Inversión</h3>
+
+<input id="capital" type="number" placeholder="Capital inicial">
+
+<input id="interes" type="number" placeholder="Interés anual (%)">
+
+<input id="anos" type="number" placeholder="Años">
+
+<button onclick="calcularInversion()">
+
+Calcular
+
+</button>
+
+<h2 id="resultadoInversion"></h2>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================== TEST ===================== -->
+
+<section>
+
+<h2 class="titulo">
+
+Test Vocacional
+
+</h2>
+
+<div class="card">
+
+<h3>
+
+¿Qué área te gusta más?
+
+</h3>
+
+<select id="vocacion">
+
+<option>Tecnología</option>
+
+<option>Salud</option>
+
+<option>Negocios</option>
+
+<option>Derecho</option>
+
+<option>Arte</option>
+
+<option>Educación</option>
+
+<option>Ingeniería</option>
+
+</select>
+
+<br><br>
+
+<button onclick="recomendarCarrera()">
+
+Ver recomendación
+
+</button>
+
+<h2 id="resultadoVocacion"></h2>
+
+</div>
+
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+
+<section id="contacto">
+
+<h2 class="titulo">
+
+Contáctanos
+
+</h2>
+
+<div class="formulario">
+
+<input placeholder="Nombre">
+
+<input placeholder="Correo">
+
+<textarea
+placeholder="Escribe tu mensaje"
+style="width:100%;height:150px;padding:15px;border:1px solid #ddd;border-radius:10px;"></textarea>
+
+<button>
+
+Enviar
+
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<img src="logo2.png">
+
+<h2>Young Future</h2>
+
+<p>
+
+Construyendo el futuro de miles de jóvenes.
+
+</p>
+
+</footer>
+
+<div id="chat"
+
+onclick="alert('Próximamente el asistente inteligente de Young Future 🤖')">
+
+💬
+
+</div>
+
+<script>
+
+const universidades=[
+
+{
+nombre:"Universidad Nacional de Colombia",
+pais:"Colombia",
+carrera:"Ingeniería"
+},
+
+{
+nombre:"Universidad de los Andes",
+pais:"Colombia",
+carrera:"Negocios"
+},
+
+{
+nombre:"Universidad Javeriana",
+pais:"Colombia",
+carrera:"Medicina"
+},
+
+{
+nombre:"Universidad del Rosario",
+pais:"Colombia",
+carrera:"Derecho"
+},
+
+{
+nombre:"Universidad EAFIT",
+pais:"Colombia",
+carrera:"Ingeniería"
+},
+
+{
+nombre:"Harvard University",
+pais:"Estados Unidos",
+carrera:"Negocios"
+},
+
+{
+nombre:"MIT",
+pais:"Estados Unidos",
+carrera:"Tecnología"
+},
+
+{
+nombre:"Stanford University",
+pais:"Estados Unidos",
+carrera:"Ingeniería"
+},
+
+{
+nombre:"University of Toronto",
+pais:"Canadá",
+carrera:"Ingeniería"
+},
+
+{
+nombre:"Universidad Complutense",
+pais:"España",
+carrera:"Derecho"
+}
+
+];
+
+const lista=document.getElementById("listaUniversidades");
+
+const buscador=document.getElementById("buscarUniversidad");
+
+function mostrarUniversidades(){
+
+lista.innerHTML="";
+
+const texto=buscador.value.toLowerCase();
+
+universidades
+
+.filter(u=>
+
+u.nombre.toLowerCase().includes(texto)
+
+||
+
+u.pais.toLowerCase().includes(texto)
+
+||
+
+u.carrera.toLowerCase().includes(texto)
+
+)
+
+.forEach(u=>{
+
+lista.innerHTML+=`
+
+<div class="card">
+
+<h3>${u.nombre}</h3>
+
+<p><b>País:</b> ${u.pais}</p>
+
+<p><b>Carrera destacada:</b> ${u.carrera}</p>
+
+</div>
+
+`;
+
+});
+
+}
+
+mostrarUniversidades();
+
+buscador.addEventListener("keyup",mostrarUniversidades);
+
+function calcularAhorro(){
+
+let ahorro=Number(document.getElementById("ahorroMensual").value);
+
+let meses=Number(document.getElementById("meses").value);
+
+document.getElementById("resultadoAhorro").innerHTML=
+
+"Total ahorrado: COP $"+(ahorro*meses).toLocaleString();
+
+}
+
+function calcularCarrera(){
+
+let semestre=Number(document.getElementById("valorSemestre").value);
+
+let cantidad=Number(document.getElementById("cantidadSemestres").value);
+
+document.getElementById("resultadoCarrera").innerHTML=
+
+"Costo aproximado: COP $"+(semestre*cantidad).toLocaleString();
+
+}
+
+function calcularInversion(){
+
+let capital=Number(document.getElementById("capital").value);
+
+let interes=Number(document.getElementById("interes").value)/100;
+
+let anos=Number(document.getElementById("anos").value);
+
+let total=capital*Math.pow((1+interes),anos);
+
+document.getElementById("resultadoInversion").innerHTML=
+
+"Valor futuro: COP $"+total.toFixed(2);
+
+}
+
+function recomendarCarrera(){
+
+const opcion=document.getElementById("vocacion").value;
+
+document.getElementById("resultadoVocacion").innerHTML=
+
+"Según tu interés, podrías estudiar <b>"+opcion+"</b>.";
+
+}
+
+
+function showRegister(){
+ loginView.style.display='none';
+ registerView.style.display='block';
+ authText.innerText='Crea tu cuenta para ingresar a Young Future.';
+}
+function showLogin(){
+ registerView.style.display='none';
+ loginView.style.display='block';
+ authText.innerText='Inicia sesión para descubrir universidades y becas.';
+}
+function registerYoung(){
+ const n=regName.value.trim(),e=regEmail.value.trim(),p=regPass.value,p2=regPass2.value;
+ if(!n||!e||!p){alert('Completa todos los campos');return;}
+ if(p!==p2){alert('Las contraseñas no coinciden');return;}
+ let users=JSON.parse(localStorage.getItem('youngUsers')||'[]');
+ if(users.find(u=>u.email===e)){alert('Ese correo ya está registrado');return;}
+ users.push({name:n,email:e,pass:p});
+ localStorage.setItem('youngUsers',JSON.stringify(users));
+ alert('¡Cuenta creada con éxito!');
+ showLogin();
+}
+function loginYoung(){
+ let users=JSON.parse(localStorage.getItem('youngUsers')||'[]');
+ let u=users.find(x=>x.email===loginEmail.value.trim() && x.pass===loginPass.value);
+ if(!u){alert('Correo o contraseña incorrectos');return;}
+ localStorage.setItem('youngActive',JSON.stringify(u));
+ authOverlay.style.display='none';
+}
+window.addEventListener('load',()=>{
+ if(localStorage.getItem('youngActive')) authOverlay.style.display='none';
+});
+
+
+// ===== BOTÓN CERRAR SESIÓN =====
+function cerrarSesion(){
+    localStorage.removeItem('youngActive');
+    authOverlay.style.display='flex';
+    showLogin();
+    loginEmail.value='';
+    loginPass.value='';
+}
+
+window.addEventListener('load',()=>{
+    if(localStorage.getItem('youngActive')){
+        authOverlay.style.display='none';
+        if(!document.getElementById('btnCerrarSesion')){
+            const nav=document.querySelector('nav');
+            const boton=document.createElement('a');
+            boton.id='btnCerrarSesion';
+            boton.href='#';
+            boton.textContent='Cerrar sesión';
+            boton.style.color='#e53935';
+            boton.style.fontWeight='600';
+            boton.onclick=(e)=>{e.preventDefault();cerrarSesion();}
+            nav.appendChild(boton);
+        }
+    }
+});
+
+const loginOriginal = loginYoung;
+loginYoung = function(){
+    loginOriginal();
+    if(localStorage.getItem('youngActive')){
+        if(!document.getElementById('btnCerrarSesion')){
+            const nav=document.querySelector('nav');
+            const boton=document.createElement('a');
+            boton.id='btnCerrarSesion';
+            boton.href='#';
+            boton.textContent='Cerrar sesión';
+            boton.style.color='#e53935';
+            boton.style.fontWeight='600';
+            boton.onclick=(e)=>{e.preventDefault();cerrarSesion();}
+            nav.appendChild(boton);
+        }
+    }
+}
+
+</script>
+
+</body>
+
+</html>
